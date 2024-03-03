@@ -53,7 +53,6 @@ def create_city_df(df):
 
 all_df = pd.read_csv("all_data.csv")
 
-all_df.sort_values(by="order_delivered_customer_date", inplace=True)
 all_df.reset_index(inplace=True)
 
 all_df["order_delivered_customer_date"] = pd.to_datetime(all_df["order_delivered_customer_date"])
